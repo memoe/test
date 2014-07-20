@@ -121,14 +121,14 @@
 
     <div class="clearfix"></div><hr>
     
-      <div class="row" ng-show="lastDelete">
+      <div class="row" ng-show="showUndo">
         <div class="col-sm-offset-2 col-sm-8">
 
         <div class="alert alert-info alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" ng-click="lastDelete = false">
+          <button type="button" class="close" ng-click="showUndo = false">
           <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 
-          Entry was deleted. <a href="#" ng-click="undoRemove(); lastDelete = false"><b>Undo</b></a>
+          Entry was deleted. <a href="#" ng-click="undoRemove(); showUndo = false"><b>Undo</b></a>
             
           
         </div>

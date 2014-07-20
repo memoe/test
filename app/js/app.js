@@ -30,7 +30,7 @@ myApp.controller('ListCtrl', ['$scope', '$http', 'myDataService', function($scop
 	$scope.newReview = {};
 	$scope.newReview.genres = [];
 	$scope.showForm = false;
-	$scope.lastDelete = false;
+	$scope.showUndo = false;
 
 	// add review to database
 	$scope.addReview = function() {
@@ -104,7 +104,7 @@ myApp.controller('ListCtrl', ['$scope', '$http', 'myDataService', function($scop
 		$http.delete('/api/reviews/' + id)
 			.success(function(data, status, headers, config) {
 				console.log("entry deleted " + id);
-				$scope.lastDelete = true;
+				$scope.showUndo = true;
 
 
 				$http.get('/api/reviews')
