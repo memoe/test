@@ -1,0 +1,21 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular-seed"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "express":"",
+    "body-parser":"",
+    "mongoose":""
+  },
+  "author": "MZ"
+}
